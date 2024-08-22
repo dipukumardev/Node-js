@@ -1,0 +1,13 @@
+//know the file handlings;
+i.) How to make a file;
+ii.) How to  write in the file;
+iii.) syn.. and aysn... file;
+iv.) Read the files; in the two way first syn,, and send is asyn...
+v.) how to append the data in the file;
+vi.) How to copy a file;
+vii.) How to see the state data of a files;
+vii.) Make  a folder;
+
+
+
+All opration int the file.js
