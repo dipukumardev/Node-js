@@ -1,0 +1,3 @@
+Understand the Blocking and Non-blocking in the Node js;
+
+find the Length of the threads of the cpu;
