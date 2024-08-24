@@ -7998,5 +7998,29 @@
         "email": "rnovikrr@altervista.org",
         "gender": "Male",
         "job_role": "Nuclear Power Engineer"
+    },
+    {
+        "first_name": "Aditya",
+        "last_name": "Singh",
+        "email": "dipukumardevcod@gamil.com",
+        "gender": "Male",
+        "job_role": "Software Devloper",
+        "id": 1001
+    },
+    {
+        "first_name": "Aditya",
+        "last_name": "Singh",
+        "email": "dipukumardevcod@gamil.com",
+        "gender": "Male",
+        "job_role": "Software Devloper",
+        "id": 1002
+    },
+    {
+        "first_name": "Dipu",
+        "last_name": "Singh",
+        "emai": "dipukumar78706555@gmail.com",
+        "gender": "male",
+        "job_role": "Coder",
+        "id": 1003
     }
 ]

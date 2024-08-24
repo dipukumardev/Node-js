@@ -58,10 +58,21 @@
 // use to the route in the same path;
 const express = require("express");
 const users = require("./MOCK_DATA.json");
-
+const fs = require("fs");
 const app = express();
 
 const PORT = 3000;
+// midleware 
+app.use(express.urlencoded({ extended: false }));
+
+// make a second midleware;
+
+app.use((req,res, next)=>{
+    console.log("hello form the Middlewar");
+    // res.json({massage:"Hello form the Middleware 1:"});
+    next();
+})
+
 
 // Multliple routes in the same path;
 
@@ -79,9 +90,43 @@ app.route("/api/users/:id").get((req, res) => {
 })
 
 
-app.get("/api/user", (req, res)=>{
-    res.json(user);
-})
+
+// Add a header 
+app.get("/api/user", (req, res) => {
+    res.setHeader("myname", "Dipu singh")
+    res.json(users);
+});
+
+
+
+// delete the data from the database;
+app.delete("/api/users/:id", (req, res) => {
+    const id = Number(req.params.id);
+    console.log("Deleting request form ID:", id);
+    const userindex = users.findIndex((user) => user.id === id);
+    if (userindex !== -1) {
+        const deletedUser = users.splice(userindex, 1)[0];
+        console.log("User deleted:", deletedUser);
+        return res.json(deletedUser);
+    } else {
+        console.log("User not found for ID:", id);
+        return res.status(404).json({ message: "User not found" });
+    }
+
+});
+
+
+
+
+app.post("/api/users", (req, res) => {
+    const body = req.body;
+    users.push({ ...body, id: users.length + 1 });
+    fs.writeFile("./MOCK_DATA.json", JSON.stringify(users), (err, data) => {
+        res.json({ statu: "succes", id: users.length });
+    });
+
+});
+
 app.listen(PORT, () => {
     console.log(`Started the server in the ${PORT}`);
 })

@@ -1,0 +1,8 @@
+Lern about POSTMAN for REST API;
+
+
+
+code part in the lecture 12 becouse all previous code are there;
+
+
+uderstand the midleware;
