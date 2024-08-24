@@ -1,0 +1,3 @@
+Understand the rest api
+
+use the the all like : get, post, put, delete 

@@ -1,0 +1,16 @@
+REST API - JSON
+
+GET / user - List all users;
+
+GET /user/1 - get the user with id 1;
+GET /user/2 - get the user with id 2;
+          1,2, means id : dynamical path parameter understands;
+
+          app.get("/users:id"):- :means id is dynamicaly anything not a const value;
+          
+POST / user - Create new user;
+
+
+PATCH /user/1 - Edit the user with the ID;
+
+DELETE / users/1 - Delete the user with the ID 1;

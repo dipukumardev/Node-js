@@ -1,0 +1,23 @@
+Know about version;
+
+full knowlage abotu the versions;
+
+ "express": "^4.19.2"
+
+divided into 3 parts in the version 
+
+1st parts:Major Release/ Braking updat
+
+
+2nd parts: (.18) Recommended Bux fix(security bog). Add the new things in the app that know the second interger;
+
+
+3rd parts: (.2)it is denoted the miner update install karo or na karo koi problem nahi hai;
+
+one  character is prejent the version
+what it work
+(^): 4 ko lock kar do minar update ko atomatical updat kar do 
+
+
+
+~:it means last update only 
