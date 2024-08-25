@@ -1,0 +1,6 @@
+Connect to the Node js to the Mongodb;
+
+Schema -- Defie the structur
+schema - Modle
+
+Using model we do CRUD operstaiton;
